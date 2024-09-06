@@ -1,0 +1,56 @@
+body { /*referente ao corpo da pagina */
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  background-image: url(img/img-plano.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  color: aliceblue;
+}
+
+.logo img { /*referente ao logotipo */
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #00eeff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main { /*referente a pagina */
+  background-color: rgba(0, 0, 0, 0.527);
+  padding: 5px 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.logo, .cabeçalho, .camp-search { /*centralizaçao */
+  text-align: center;
+
+}
+
+.search-result { /*espaço e botao de pesuisa */
+  text-align: center;
+}
+.resultado { /*campo de reproduçao video */
+  text-align:start /* Centraliza o vídeo  */
+}
+
+video { /*referencias ao video */
+  width: 50%; /* Define a largura do vídeo como 80% do container */
+  height: auto; /* Mantém a proporção do vídeo */
+  border: 1px solid #00aeff; /* Adiciona uma borda ao vídeo */
+  margin: 20px auto; /* Adiciona margem superior e inferior */
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 200px;
+    height: 200px;
+  }
+  video {
+    width: 80%;
+  }
+}
