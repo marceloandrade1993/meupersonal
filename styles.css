@@ -1,6 +1,7 @@
 body { /*referente ao corpo da pagina */
   width: 95%;
   height: 100vh auto;
+  min-height: 100vh;
   max-width: 800px;
   margin: auto;
   background-image: url(img/sala2.jpg);
