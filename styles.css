@@ -4,13 +4,17 @@ body { /*referente ao corpo da pagina */
   min-height: 100vh;
   max-width: 800px;
   margin: auto;
-  background-image: url(img/sala2.jpg);
+  background-image: url(img/fundo3.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
-  color: rgb(255, 255, 255);
+  color: rgb(4, 251, 255);
+}
+
+h2 {
+  color: rgb(255, 234, 0);
 }
 
 .logo img { /*referente ao logotipo */
@@ -70,11 +74,12 @@ main { /*referente a pagina */
   width: 5%; /* Ajustar a largura conforme necessário */
   margin-bottom: 10px;
   
+  
 }
 
 .resultado video {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
