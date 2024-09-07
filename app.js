@@ -1,23 +1,35 @@
 function pesquisar() {
-    // Seleciona a seção onde os resultados da pesquisa serão exibidos
-    let section = document.getElementById("resultado");
-    console.log(section);
+  const termoPesquisa = document.getElementById('campo-pesquisa').value.trim().toLowerCase();
+  const section = document.getElementById("resultado");
+  section.innerHTML = "";
+
+  // Filtra os dados com base no termo de pesquisa
+  const resultadosFiltrados = dados.filter(dado => {
+    return dado.titulo.toLowerCase().includes(termoPesquisa);
+  });
+
   
-    let resultado = "";
-  
-    // Itera sobre os dados da pesquisa e cria o HTML para cada item
-    for (let dado of dados) {
-      resultado += `
-        <div class="video-container"> <h2>${dado.titulo}</h2> <video src="img/video1.mp4" controls></video> <p>${dado.descriçao}</p> </div>
-      `;
-    }
-  
-    // Atualiza o conteúdo da seção com os resultados da pesquisa
-    section.innerHTML = resultado;
-  }
 
+  // Renderiza os resultados filtrados
+  resultadosFiltrados.forEach(dado => {
+    const div = document.createElement('div');
+    div.classList.add('item-resultado');
 
+    const video = document.createElement('video');
+    video.src = dado.videoUrl;
+    video.controls = true;
 
+    const h2 = document.createElement('h2');
+    h2.textContent = dado.titulo;
 
+    const p = document.createElement('p');
+    p.textContent = dado.descriçao;
 
+    div.appendChild(video);
+    div.appendChild(h2);
+    div.appendChild(p);
+   
 
+    section.appendChild(div);
+  });
+}
