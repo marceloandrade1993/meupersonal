@@ -19,6 +19,7 @@ body { /*referente ao corpo da pagina */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 main { /*referente a pagina */
   background-color: rgba(0, 0, 0, 0.527);
   padding: 5px 40px;
@@ -26,23 +27,48 @@ main { /*referente a pagina */
   border-radius: 10px;
 }
 
-.logo, .cabeçalho, .camp-search { /*centralizaçao */
+.logo, main { /*centralizaçao */
   text-align: center;
 
 }
 
-.search-result { /*espaço e botao de pesuisa */
-  text-align: center;
-}
-.resultado { /*campo de reproduçao video */
-  text-align:start /* Centraliza o vídeo  */
+/* ... (restante do seu CSS) */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-video { /*referencias ao video */
-  width: 50%; /* Define a largura do vídeo como 80% do container */
-  height: auto; /* Mantém a proporção do vídeo */
-  border: 1px solid #00aeff; /* Adiciona uma borda ao vídeo */
-  margin: 20px auto; /* Adiciona margem superior e inferior */
+.search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultado .video1, .resultado .video2, .resultado .video3, .resultado .video4 {
+  width: 80%; /* Ajustar a largura conforme necessário */
+  margin-bottom: 20px;
+}
+
+.resultado video {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
