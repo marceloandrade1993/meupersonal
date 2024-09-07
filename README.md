@@ -1,7 +1,7 @@
 README: Meu Personal Trainer Virtual
 Descrição:
 
-Este projeto é um aplicativo web que permite aos usuários pesquisar exercícios por membro corporal e visualizar vídeos demonstrativos.
+Este projeto é um aplicativo web que permite aos usuários pesquisar exercícios por membro corporal e visualizar vídeos demonstrativos, projeto em faze de desenvolvimento, ao final tera todos os videos de ensino para exercicios pro corpo humano, saude e tudo.
 
 Funcionalidades:
 
