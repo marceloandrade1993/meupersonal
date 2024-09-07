@@ -12,6 +12,7 @@ body { /*referente ao corpo da pagina */
 }
 
 .logo img { /*referente ao logotipo */
+  background-image: url(img/logotipo.jpeg);
   border-radius: 50%;
   width: 300px;
   height: 300px;
