@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Personal Trainner</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Personal Trainer Virtual</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <main>
-    <div class="logo">
-     <img src="img/logotipo.jpeg" alt="logotipo">
-    </div>
-    
-    <h1 class="cabeçalho">Meu Personal Trainner Virtual</h1>
-    <h2 class="camp-search">Pesquise seu Exercicio</h2>
    
-    <div class="search-result">
-     <input type="text" placeholder="Pesquise"> 
-     <button onclick="pesquisar()">click</button>
-    </div>
-    <section class="resultado" 
-    id="resultado">
-   
-    </section>
- </main>
-
-  <script src="dados.js"></script>
-  <script src="app.js"></script>
   
+  <header>
+        <div class="logo">
+        <img src="img/logotipo.jpeg" alt="Logotipo do Meu Personal Trainer Virtual">
+        </div>
+  </header>
+   
+   
+   <main>
+     <h1>Meu Personal Trainer Virtual</h1>
+     <h2>Pesquise o  Exercicio por membro corporal</h2>
+
+        <div class="search">
+          <input type="text" id="campo-pesquisa" id="pesquisa-Membro">
+          <button onclick="pesquisar()">Pesquisar</button>
+        </div>
+
+       <section class="resultado" id="resultado">
+        <!-- div class="item-resultado">
+              <video src="img/videoagachar.mp4" controls></video>
+              <h2>
+                <a href="#" target="_blank">Inferiores</a>
+              </h2>
+              <p class="descricao-meta">Agachamento: fazer 3 séries de 15 repetições</p>
+            </div>
+            <div class="item-resultado">
+              <video src="img/videopeito.mp4" controls></video>
+              <h2>
+                <a href="#" target="_blank">Superiores</a>
+              </h2>
+              <p class="descricao-meta">flexao: fazer 3 séries de 15 repetições</p>
+            </div>
+            <div class="item-resultado">
+              <video src="img/videocosta.mp4" controls></video>
+              <h2>
+                <a href="#" target="_blank">Costas</a>
+              </h2>
+              <p class="descricao-meta">Costa : fazer 3 series de 30 seg</p>
+            </div>
+            <div class="item-resultado">
+              <video src="img/videobraço.mp4"controls></video>
+              <h2>
+                <a href="#" target="_blank">Braço</a>
+              </h2>
+              <p class="descricao-meta">antebraço : fazer 3 series de 10 repetições</p>
+            </div> -->
+           
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
