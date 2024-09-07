@@ -8,7 +8,7 @@ body { /*referente ao corpo da pagina */
 
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 
 .logo img { /*referente ao logotipo */
@@ -59,24 +59,24 @@ main { /*referente a pagina */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3%;
+  color: #ffffff;
 }
 
 .resultado .video1, .resultado .video2, .resultado .video3, .resultado .video4 {
-  width: 80%; /* Ajustar a largura conforme necessário */
-  margin-bottom: 20px;
+  width: 5%; /* Ajustar a largura conforme necessário */
+  margin-bottom: 10px;
+  
 }
 
 .resultado video {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
-  .logo img {
-    width: 200px;
-    height: 200px;
-  }
-  video {
-    width: 80%;
+  .resultado video {
+    width:80%;
   }
 }
