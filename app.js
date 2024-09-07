@@ -1,4 +1,8 @@
 function pesquisar() {
+
+   
+
+  
   const termoPesquisa = document.getElementById('campo-pesquisa').value.trim().toLowerCase();
   const section = document.getElementById("resultado");
   section.innerHTML = "";
@@ -7,6 +11,12 @@ function pesquisar() {
   const resultadosFiltrados = dados.filter(dado => {
     return dado.titulo.toLowerCase().includes(termoPesquisa);
   });
+  
+   // Verifica se o termo de pesquisa está vazio
+   if (termoPesquisa === "") {
+    section.innerHTML = "<p class='erro'>Por favor, digite o membro para pesuisar.</p>";
+    return; // Interrompe a função
+  }
 
   
 
